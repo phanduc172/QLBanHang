@@ -1,0 +1,16 @@
+E:\.NET\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+E:\.NET\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+E:\.NET\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.AssemblyReference.cache
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.cache
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileInputs.cache
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmMain.resources
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDMChatLieu.resources
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDMKhachHang.resources
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDMNhanVien.resources
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDMHangHoa.resources
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmHoaDonBan.resources
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmTimHDBan.resources
