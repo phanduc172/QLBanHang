@@ -252,18 +252,7 @@ namespace QuanLyBanHang
             txtMaHang.Enabled = false;
         }
 
-        private void btnOpen_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog dlgOpen = new OpenFileDialog();
-            dlgOpen.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg)|*.jpg|GIF(*.gif)|*.gif|All files(*.*)|*.*";
-            dlgOpen.FilterIndex = 2;
-            dlgOpen.Title = "Chọn ảnh minh hoạ cho sản phẩm";
-            if (dlgOpen.ShowDialog() == DialogResult.OK)
-            {
-                picAnh.Image = Image.FromFile(dlgOpen.FileName);
-                txtAnh.Text = dlgOpen.FileName;
-            }
-        }
+        
 
         private void btnHienThi_Click(object sender, EventArgs e)
         {
@@ -278,10 +267,17 @@ namespace QuanLyBanHang
             this.Close();
         }
 
-        private void dgvHang_CellContentClick(object sender, EventArgs e)
+        private void btnOpen_Click(object sender, EventArgs e)
         {
-
+            OpenFileDialog dlgOpen = new OpenFileDialog();
+            dlgOpen.Filter = "Bitmap(*.bmp)|*.bmp|JPEG(*.jpg)|*.jpg|GIF(*.gif)|*.gif|All files(*.*)|*.*";
+            dlgOpen.FilterIndex = 2;
+            dlgOpen.Title = "Chọn ảnh minh hoạ cho sản phẩm";
+            if (dlgOpen.ShowDialog() == DialogResult.OK)
+            {
+                picAnh.Image = Image.FromFile(dlgOpen.FileName);
+                txtAnh.Text = dlgOpen.FileName;
+            }
         }
-
     }
 }

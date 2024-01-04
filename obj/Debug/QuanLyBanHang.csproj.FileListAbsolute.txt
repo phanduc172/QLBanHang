@@ -14,3 +14,4 @@ E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDMNhanVien.resources
 E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmDMHangHoa.resources
 E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmHoaDonBan.resources
 E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.frmTimHDBan.resources
+E:\.NET\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.ResolveComReference.cache

@@ -37,31 +37,35 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtMaKhach = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.mtbDienThoai = new System.Windows.Forms.MaskedTextBox();
             this.txtTenKhach = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.mtbDienThoai = new System.Windows.Forms.MaskedTextBox();
-            this.dgvKhachHang = new System.Windows.Forms.DataGridView();
+            this.txtMaKhach = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(43, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(978, 62);
             this.panel2.TabIndex = 5;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
@@ -80,14 +84,15 @@
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnThem);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 454);
+            this.panel1.Location = new System.Drawing.Point(0, 537);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(978, 90);
+            this.panel1.Size = new System.Drawing.Size(1064, 90);
             this.panel1.TabIndex = 6;
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(763, 21);
+            this.btnDong.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnDong.Location = new System.Drawing.Point(806, 21);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(108, 45);
             this.btnDong.TabIndex = 5;
@@ -97,7 +102,8 @@
             // 
             // btnBoQua
             // 
-            this.btnBoQua.Location = new System.Drawing.Point(623, 21);
+            this.btnBoQua.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBoQua.Location = new System.Drawing.Point(666, 21);
             this.btnBoQua.Name = "btnBoQua";
             this.btnBoQua.Size = new System.Drawing.Size(108, 45);
             this.btnBoQua.TabIndex = 4;
@@ -107,7 +113,8 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(483, 21);
+            this.btnLuu.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLuu.Location = new System.Drawing.Point(526, 21);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(108, 45);
             this.btnLuu.TabIndex = 3;
@@ -117,7 +124,8 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(343, 21);
+            this.btnSua.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSua.Location = new System.Drawing.Point(386, 21);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(108, 45);
             this.btnSua.TabIndex = 2;
@@ -127,7 +135,8 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(203, 21);
+            this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnXoa.Location = new System.Drawing.Point(246, 21);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(108, 45);
             this.btnXoa.TabIndex = 1;
@@ -137,7 +146,8 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(63, 21);
+            this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnThem.Location = new System.Drawing.Point(106, 21);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(108, 45);
             this.btnThem.TabIndex = 0;
@@ -145,107 +155,128 @@
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // label2
+            // panel3
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 87);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Mã khách";
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.dgvKhachHang);
+            this.panel3.Controls.Add(this.mtbDienThoai);
+            this.panel3.Controls.Add(this.txtTenKhach);
+            this.panel3.Controls.Add(this.txtDiaChi);
+            this.panel3.Controls.Add(this.txtMaKhach);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(0, 62);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1064, 475);
+            this.panel3.TabIndex = 7;
+            // 
+            // dgvKhachHang
+            // 
+            this.dgvKhachHang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvKhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhachHang.Location = new System.Drawing.Point(48, 101);
+            this.dgvKhachHang.Name = "dgvKhachHang";
+            this.dgvKhachHang.RowHeadersWidth = 62;
+            this.dgvKhachHang.RowTemplate.Height = 28;
+            this.dgvKhachHang.Size = new System.Drawing.Size(973, 367);
+            this.dgvKhachHang.TabIndex = 19;
+            this.dgvKhachHang.Click += new System.EventHandler(this.dgvKhachHang_Click);
+            // 
+            // mtbDienThoai
+            // 
+            this.mtbDienThoai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mtbDienThoai.Location = new System.Drawing.Point(624, 59);
+            this.mtbDienThoai.Mask = "(999) 000-0000";
+            this.mtbDienThoai.Name = "mtbDienThoai";
+            this.mtbDienThoai.Size = new System.Drawing.Size(311, 26);
+            this.mtbDienThoai.TabIndex = 14;
+            // 
+            // txtTenKhach
+            // 
+            this.txtTenKhach.Location = new System.Drawing.Point(151, 59);
+            this.txtTenKhach.Name = "txtTenKhach";
+            this.txtTenKhach.Size = new System.Drawing.Size(311, 26);
+            this.txtTenKhach.TabIndex = 13;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDiaChi.Location = new System.Drawing.Point(624, 7);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(311, 26);
+            this.txtDiaChi.TabIndex = 12;
+            // 
+            // txtMaKhach
+            // 
+            this.txtMaKhach.Location = new System.Drawing.Point(151, 7);
+            this.txtMaKhach.Name = "txtMaKhach";
+            this.txtMaKhach.Size = new System.Drawing.Size(311, 26);
+            this.txtMaKhach.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(515, 65);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 20);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Số điện thoại";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(515, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 20);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Địa chỉ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 139);
+            this.label3.Location = new System.Drawing.Point(44, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 20);
-            this.label3.TabIndex = 7;
+            this.label3.TabIndex = 17;
             this.label3.Text = "Tên khách";
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(515, 87);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 20);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Địa chỉ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(515, 139);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 20);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Số điện thoại";
-            // 
-            // txtMaKhach
-            // 
-            this.txtMaKhach.Location = new System.Drawing.Point(151, 81);
-            this.txtMaKhach.Name = "txtMaKhach";
-            this.txtMaKhach.Size = new System.Drawing.Size(311, 26);
-            this.txtMaKhach.TabIndex = 0;
-            // 
-            // txtTenKhach
-            // 
-            this.txtTenKhach.Location = new System.Drawing.Point(151, 133);
-            this.txtTenKhach.Name = "txtTenKhach";
-            this.txtTenKhach.Size = new System.Drawing.Size(311, 26);
-            this.txtTenKhach.TabIndex = 2;
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Location = new System.Drawing.Point(624, 81);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(311, 26);
-            this.txtDiaChi.TabIndex = 1;
-            // 
-            // mtbDienThoai
-            // 
-            this.mtbDienThoai.Location = new System.Drawing.Point(624, 133);
-            this.mtbDienThoai.Mask = "(999) 000-0000";
-            this.mtbDienThoai.Name = "mtbDienThoai";
-            this.mtbDienThoai.Size = new System.Drawing.Size(311, 26);
-            this.mtbDienThoai.TabIndex = 3;
-            // 
-            // dgvKhachHang
-            // 
-            this.dgvKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhachHang.Location = new System.Drawing.Point(48, 175);
-            this.dgvKhachHang.Name = "dgvKhachHang";
-            this.dgvKhachHang.RowHeadersWidth = 62;
-            this.dgvKhachHang.RowTemplate.Height = 28;
-            this.dgvKhachHang.Size = new System.Drawing.Size(887, 284);
-            this.dgvKhachHang.TabIndex = 10;
-            this.dgvKhachHang.Click += new System.EventHandler(this.dgvKhachHang_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(44, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 20);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Mã khách";
             // 
             // frmDMKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 544);
-            this.Controls.Add(this.dgvKhachHang);
-            this.Controls.Add(this.mtbDienThoai);
-            this.Controls.Add(this.txtTenKhach);
-            this.Controls.Add(this.txtDiaChi);
-            this.Controls.Add(this.txtMaKhach);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1064, 627);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "frmDMKhachHang";
+            this.ShowInTaskbar = false;
             this.Text = "Danh mục khách hàng";
             this.Load += new System.EventHandler(this.frmDMKhachHang_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -260,14 +291,15 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtMaKhach;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.DataGridView dgvKhachHang;
+        private System.Windows.Forms.MaskedTextBox mtbDienThoai;
         private System.Windows.Forms.TextBox txtTenKhach;
         private System.Windows.Forms.TextBox txtDiaChi;
-        private System.Windows.Forms.MaskedTextBox mtbDienThoai;
-        private System.Windows.Forms.DataGridView dgvKhachHang;
+        private System.Windows.Forms.TextBox txtMaKhach;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

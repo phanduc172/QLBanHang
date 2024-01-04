@@ -264,10 +264,5 @@ namespace QuanLyBanHang
             this.Close();
         }
 
-        private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
     } 
 }

@@ -51,21 +51,23 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btnDong);
             this.panel1.Controls.Add(this.btnBoQua);
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnThem);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 454);
+            this.panel1.Location = new System.Drawing.Point(0, 466);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(978, 90);
+            this.panel1.Size = new System.Drawing.Size(982, 78);
             this.panel1.TabIndex = 2;
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(781, 21);
+            this.btnDong.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnDong.Location = new System.Drawing.Point(781, 16);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(108, 45);
             this.btnDong.TabIndex = 5;
@@ -75,7 +77,8 @@
             // 
             // btnBoQua
             // 
-            this.btnBoQua.Location = new System.Drawing.Point(641, 21);
+            this.btnBoQua.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBoQua.Location = new System.Drawing.Point(641, 16);
             this.btnBoQua.Name = "btnBoQua";
             this.btnBoQua.Size = new System.Drawing.Size(108, 45);
             this.btnBoQua.TabIndex = 4;
@@ -85,7 +88,8 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(501, 21);
+            this.btnLuu.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLuu.Location = new System.Drawing.Point(501, 16);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(108, 45);
             this.btnLuu.TabIndex = 3;
@@ -95,7 +99,8 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(361, 21);
+            this.btnSua.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnSua.Location = new System.Drawing.Point(361, 16);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(108, 45);
             this.btnSua.TabIndex = 2;
@@ -105,7 +110,8 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(221, 21);
+            this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnXoa.Location = new System.Drawing.Point(221, 16);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(108, 45);
             this.btnXoa.TabIndex = 1;
@@ -115,7 +121,8 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(81, 21);
+            this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnThem.Location = new System.Drawing.Point(81, 16);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(108, 45);
             this.btnThem.TabIndex = 0;
@@ -125,19 +132,20 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(978, 62);
+            this.panel2.Size = new System.Drawing.Size(982, 62);
             this.panel2.TabIndex = 3;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(337, 15);
+            this.label1.Location = new System.Drawing.Point(311, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(324, 33);
             this.label1.TabIndex = 1;
@@ -145,41 +153,50 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.dgvChatLieu);
             this.panel3.Controls.Add(this.txtTenChatLieu);
             this.panel3.Controls.Add(this.txtMaChatLieu);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.lb);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 62);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(978, 392);
+            this.panel3.Size = new System.Drawing.Size(982, 407);
             this.panel3.TabIndex = 4;
             // 
             // dgvChatLieu
             // 
+            this.dgvChatLieu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvChatLieu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvChatLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChatLieu.Location = new System.Drawing.Point(23, 103);
             this.dgvChatLieu.Name = "dgvChatLieu";
             this.dgvChatLieu.RowHeadersWidth = 62;
             this.dgvChatLieu.RowTemplate.Height = 28;
-            this.dgvChatLieu.Size = new System.Drawing.Size(929, 289);
+            this.dgvChatLieu.Size = new System.Drawing.Size(933, 304);
             this.dgvChatLieu.TabIndex = 6;
             this.dgvChatLieu.Click += new System.EventHandler(this.dgvChatLieu_Click);
             // 
             // txtTenChatLieu
             // 
-            this.txtTenChatLieu.Location = new System.Drawing.Point(248, 57);
+            this.txtTenChatLieu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenChatLieu.Location = new System.Drawing.Point(248, 54);
             this.txtTenChatLieu.Name = "txtTenChatLieu";
-            this.txtTenChatLieu.Size = new System.Drawing.Size(622, 26);
+            this.txtTenChatLieu.Size = new System.Drawing.Size(626, 26);
             this.txtTenChatLieu.TabIndex = 1;
             // 
             // txtMaChatLieu
             // 
+            this.txtMaChatLieu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMaChatLieu.Location = new System.Drawing.Point(248, 9);
             this.txtMaChatLieu.Name = "txtMaChatLieu";
-            this.txtMaChatLieu.Size = new System.Drawing.Size(622, 26);
+            this.txtMaChatLieu.Size = new System.Drawing.Size(626, 26);
             this.txtMaChatLieu.TabIndex = 0;
             this.txtMaChatLieu.TabStop = false;
             // 
@@ -209,12 +226,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 544);
+            this.ClientSize = new System.Drawing.Size(982, 544);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.Name = "frmDMChatLieu";
+            this.ShowInTaskbar = false;
             this.Text = "Danh mục chất liệu";
             this.Load += new System.EventHandler(this.frmDMChatLieu_Load);
             this.panel1.ResumeLayout(false);
